@@ -9,7 +9,7 @@ type Tag = {
 }
 
 const TextAndTag: React.FC = () => {
-  const [state, setState] = useState<Tag[]>([{ name: "Scala" }, { name: "JavaScript" }])
+  const [state, setState] = useState<Tag[]>([])
   
   const handle = useCallback((lang: string) => {
     if (!state.find(l => l.name === lang)) {
